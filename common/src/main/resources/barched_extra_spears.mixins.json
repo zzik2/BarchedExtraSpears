@@ -1,0 +1,13 @@
+{
+  "required": true,
+  "package": "zzik2.barched.extra.spears.mixin",
+  "compatibilityLevel": "JAVA_21",
+  "minVersion": "0.8",
+  "client": [
+  ],
+  "mixins": [
+  ],
+  "injectors": {
+    "defaultRequire": 1
+  }
+}
