@@ -7,6 +7,20 @@ dependencies {
     modImplementation "dev.architectury:architectury:$rootProject.architectury_api_version"
 
     // Barched
+    modCompileOnly("maven.modrinth:barched:${project.barched_fabric_version}")
+
+    // Config
+    modCompileOnlyApi("me.shedaniel.cloth:cloth-config:$rootProject.cloth_config_version") {
+        exclude(group: "net.fabricmc.fabric-api")
+    }
 
     // Compat Mods
+    modCompileOnly("maven.modrinth:bronze:${project.bronze_fabric_version}")
+    compileOnly("maven.modrinth:paradise-lost:${project.paradise_lost_fabric_version}")
+    modCompileOnly("maven.modrinth:progression-reborn:${project.progression_reborn_fabric_version}")
+    modCompileOnly("maven.modrinth:dragonloot:${project.dragonloot_fabric_version}")
+    modCompileOnly("maven.modrinth:aether:${project.aether_fabric_version}")
+    modCompileOnly("maven.modrinth:addadd:${project.additionaladditions_fabric_version}")
+    modCompileOnly("maven.modrinth:deeperdarker:${project.deeperdarker_fabric_version}")
+    modCompileOnly("maven.modrinth:enderite-mod:${project.enderitemod_fabric_version}")
 }
