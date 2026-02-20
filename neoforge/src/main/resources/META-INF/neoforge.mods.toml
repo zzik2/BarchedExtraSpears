@@ -34,5 +34,78 @@ versionRange = "[13.0.8,)"
 ordering = "AFTER"
 side = "BOTH"
 
+[[dependencies.barched_extra_spears]]
+modId = "cloth_config"
+type = "required"
+versionRange = "*"
+ordering = "AFTER"
+side = "BOTH"
+
+[[dependencies.barched_extra_spears]]
+modId = "barched"
+type = "required"
+versionRange = "*"
+ordering = "AFTER"
+side = "BOTH"
+
+
+[[dependencies.barched_extra_spears]]
+modId = "bronze"
+type = "optional"
+versionRange = "*"
+ordering = "AFTER"
+side = "BOTH"
+
+
+[[dependencies.barched_extra_spears]]
+modId = "paradise_lost"
+type = "optional"
+versionRange = "*"
+ordering = "AFTER"
+side = "BOTH"
+
+[[dependencies.barched_extra_spears]]
+modId = "progression_reborn"
+type = "optional"
+versionRange = "*"
+ordering = "AFTER"
+side = "BOTH"
+
+[[dependencies.barched_extra_spears]]
+modId = "dragonloot"
+type = "optional"
+versionRange = "*"
+ordering = "AFTER"
+side = "BOTH"
+
+[[dependencies.barched_extra_spears]]
+modId = "aether"
+type = "optional"
+versionRange = "*"
+ordering = "AFTER"
+side = "BOTH"
+
+[[dependencies.barched_extra_spears]]
+modId = "additionaladditions"
+type = "optional"
+versionRange = "*"
+ordering = "AFTER"
+side = "BOTH"
+
+[[dependencies.barched_extra_spears]]
+modId = "deeperdarker"
+type = "optional"
+versionRange = "*"
+ordering = "AFTER"
+side = "BOTH"
+
+[[dependencies.barched_extra_spears]]
+modId = "enderitemod"
+type = "optional"
+versionRange = "*"
+ordering = "AFTER"
+side = "BOTH"
+
+
 [[mixins]]
 config = "barched_extra_spears.mixins.json"

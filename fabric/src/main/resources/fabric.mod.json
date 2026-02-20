@@ -2,7 +2,7 @@
   "schemaVersion": 1,
   "id": "barched_extra_spears",
   "version": "${version}",
-  "name": "barched_extra_spears",
+  "name": "barchedES",
   "description": "",
   "authors": [
     "zzik2"
@@ -29,9 +29,18 @@
     "minecraft": "~1.21.1",
     "java": ">=21",
     "architectury": ">=13.0.8",
-    "fabric-api": "*"
+    "fabric-api": "*",
+    "cloth-config": "*",
+    "barched": "*"
   },
   "suggests": {
-    "another-mod": "*"
+    "bronze": "*",
+    "paradise_lost": "*",
+    "progression_reborn": "*",
+    "dragonloot": "*",
+    "aether": "*",
+    "additionaladditions": "*",
+    "deeperdarker": "*",
+    "enderitemod": "*"
   }
 }
