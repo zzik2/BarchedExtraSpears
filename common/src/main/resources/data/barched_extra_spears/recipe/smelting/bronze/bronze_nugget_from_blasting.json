@@ -1,0 +1,29 @@
+{
+  "type": "minecraft:blasting",
+  "category": "misc",
+  "cookingtime": 100,
+  "experience": 0.1,
+  "group": "bronze_nugget_from_blasting",
+  "ingredient": [
+    {
+      "item": "bronze:bronze_spear"
+    }
+  ],
+  "result": {
+    "id": "bronze:bronze_nugget"
+  },
+  "fabric:load_conditions": [
+    {
+      "condition": "fabric:all_mods_loaded",
+      "values": [
+        "bronze"
+      ]
+    }
+  ],
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "bronze"
+    }
+  ]
+}
