@@ -116,7 +116,7 @@ public class RegisterFactory {
         AtomicBoolean log = new AtomicBoolean(false);
 
         ITEM_TO_REGISTRYDATA.forEach((key, value) -> {
-            TabData tabData = value.tabData();
+            TabData<? extends Item, ? extends Item> tabData = value.tabData();
             if (tabData == null) return;
             CreativeModeTab targetTab = tabData.tabSupplier().get();
             if (targetTab == null) return;
