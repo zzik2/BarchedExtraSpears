@@ -1,9 +1,6 @@
 package zzik2.barched.extra.spears.compat;
 
-import zzik2.barched.extra.spears.compat.impl.BronzeCompat;
-import zzik2.barched.extra.spears.compat.impl.DragonLootCompat;
-import zzik2.barched.extra.spears.compat.impl.ParadiseLostCompat;
-import zzik2.barched.extra.spears.compat.impl.ProgressionRebornCompat;
+import zzik2.barched.extra.spears.compat.impl.*;
 
 @SuppressWarnings("all")
 public enum CompatMods {
@@ -12,6 +9,7 @@ public enum CompatMods {
     PARADISE_LOST(new ParadiseLostCompat()),
     PROGRESSION_REBORN(new ProgressionRebornCompat()),
     DRAGONLOOT(new DragonLootCompat()),
+    AETHER(new AetherCompat())
     ;
 
     private final ICompatMod compatMod;

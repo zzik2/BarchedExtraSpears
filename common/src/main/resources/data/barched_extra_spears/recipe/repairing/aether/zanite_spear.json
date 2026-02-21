@@ -1,0 +1,22 @@
+{
+  "type": "aether:repairing",
+  "group": "altar_spear_repair",
+  "ingredient": {
+    "item": "aether:zanite_spear"
+  },
+  "repairTime": 750,
+  "fabric:load_conditions": [
+    {
+      "condition": "fabric:all_mods_loaded",
+      "values": [
+        "aether"
+      ]
+    }
+  ],
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "aether"
+    }
+  ]
+}

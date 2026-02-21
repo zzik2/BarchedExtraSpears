@@ -24,6 +24,22 @@
     {
       "id": "dragonloot:dragon_spear",
       "required": false
+    },
+    {
+      "id": "aether:skyroot_spear",
+      "required": false
+    },
+    {
+      "id": "aether:gravitite_spear",
+      "required": false
+    },
+    {
+      "id": "aether:zanite_spear",
+      "required": false
+    },
+    {
+      "id": "aether:holystone_spear",
+      "required": false
     }
   ]
 }
