@@ -136,9 +136,9 @@ public class RegisterFactory {
                     BarchedES.LOGGER.info("Register Spears to CreativeMode Tab: {}", currentResourceLocation);
                 }
 
-                Item item = key.get();
-                Item afterAdd = tabData.afterAddSupplier().get();
-                Item beforeAdd = tabData.beforeAddSupplier().get();
+                Item item = key != null ? key.get() : null;
+                Item afterAdd = tabData.afterAddSupplier() != null ? tabData.afterAddSupplier().get() : null;
+                Item beforeAdd = tabData.beforeAddSupplier() != null ? tabData.beforeAddSupplier().get() : null;
 
                 if (afterAdd != null && item != null) output.after(new ItemStack(afterAdd), new ItemStack(item));
                 if (beforeAdd != null && item != null) output.before(new ItemStack(beforeAdd), new ItemStack(item));
