@@ -4,8 +4,6 @@ import net.dragonloot.init.ItemInit;
 import net.dragonloot.item.DragonToolMaterials;
 import net.minecraft.core.registries.BuiltInRegistries;
 import net.minecraft.world.item.CreativeModeTab;
-import net.minecraft.world.item.Item;
-import net.minecraft.world.item.Tier;
 import zzik2.barched.extra.spears.compat.ICompatMod;
 import zzik2.barched.extra.spears.data.RegistryData;
 import zzik2.barched.extra.spears.data.creativetab.TabData;
@@ -25,7 +23,12 @@ public class DragonLootCompat implements ICompatMod {
 
     @Override
     public List<RegistryData> getDefaultMaterials() {
-        Supplier<Item> DRAGON_SWORD = () -> ItemInit.DRAGON_SWORD;
+        //fix static init
+        try {
+            Class.forName("net.dragonloot.init.ConfigInit");
+            Class.forName("net.dragonloot.init.ItemInit");
+        } catch (Exception ignored) {}
+
         Supplier<CreativeModeTab> TAB = () -> BuiltInRegistries.CREATIVE_MODE_TAB.get(ItemInit.DRAGON_ITEM_GROUP);
         return List.of(
                 //1.125x stronger than netherite
