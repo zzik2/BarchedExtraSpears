@@ -1,0 +1,46 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_olvite": {
+      "conditions": {
+        "items": [
+          {
+            "items": "paradise_lost:olvite"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "barched_extra_spears:crafting/paradise_lost/olvite_spear"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe",
+      "has_olvite"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "barched_extra_spears:crafting/paradise_lost/olvite_spear"
+    ]
+  },
+  "fabric:load_conditions": [
+    {
+      "condition": "fabric:all_mods_loaded",
+      "values": [
+        "paradise_lost"
+      ]
+    }
+  ],
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "paradise_lost"
+    }
+  ]
+}

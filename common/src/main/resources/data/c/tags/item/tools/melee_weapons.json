@@ -4,6 +4,18 @@
     {
       "id": "bronze:bronze_spear",
       "required": false
+    },
+    {
+      "id": "paradise_lost:olvite_spear",
+      "required": false
+    },
+    {
+      "id": "paradise_lost:surtrum_spear",
+      "required": false
+    },
+    {
+      "id": "paradise_lost:glazed_gold_spear",
+      "required": false
     }
   ]
 }
