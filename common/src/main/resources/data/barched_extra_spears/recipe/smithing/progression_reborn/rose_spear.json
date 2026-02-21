@@ -1,0 +1,29 @@
+{
+  "type": "minecraft:smithing_transform",
+  "template": {
+    "item": "progression_reborn:rose_upgrade_smithing_template"
+  },
+  "base": {
+    "item": "minecraft:golden_spear"
+  },
+  "addition": {
+    "item": "progression_reborn:rose_ingot"
+  },
+  "result": {
+    "id": "progression_reborn:rose_spear"
+  },
+  "fabric:load_conditions": [
+    {
+      "condition": "fabric:all_mods_loaded",
+      "values": [
+        "progression_reborn"
+      ]
+    }
+  ],
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "progression_reborn"
+    }
+  ]
+}

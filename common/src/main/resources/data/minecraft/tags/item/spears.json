@@ -16,6 +16,10 @@
     {
       "id": "paradise_lost:glazed_gold_spear",
       "required": false
+    },
+    {
+      "id": "progression_reborn:rose_spear",
+      "required": false
     }
   ]
 }
