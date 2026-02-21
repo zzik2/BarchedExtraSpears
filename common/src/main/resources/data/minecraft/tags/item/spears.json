@@ -20,6 +20,10 @@
     {
       "id": "progression_reborn:rose_spear",
       "required": false
+    },
+    {
+      "id": "dragonloot:dragon_spear",
+      "required": false
     }
   ]
 }
