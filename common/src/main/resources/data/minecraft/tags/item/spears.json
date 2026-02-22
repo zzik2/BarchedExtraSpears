@@ -44,6 +44,10 @@
     {
       "id": "additionaladditions:rose_gold_spear",
       "required": false
+    },
+    {
+      "id": "deeperdarker:warden_spear",
+      "required": false
     }
   ]
 }
