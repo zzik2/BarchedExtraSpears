@@ -23,7 +23,7 @@ public class BronzeCompat implements ICompatMod {
     public List<RegistryData> getDefaultMaterials() {
         return List.of(
                 new RegistryData(
-                        new MaterialData<>(BronzeToolMaterial.INSTANCE, "bronze"),
+                        new MaterialData<>(() -> BronzeToolMaterial.INSTANCE, "bronze"),
                         new SpearData<>(new SpearAttributeData(
                                 1.00F,
                                 1.0125F,

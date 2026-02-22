@@ -66,11 +66,11 @@ public class RegisterFactory {
 
             for (RegistryData registryData : iCompatMod.getMaterials()) {
                 materialCount++;
-                MaterialData<Tier, String> materialData = registryData.materialData();
+                MaterialData<Supplier<Tier>, String> materialData = registryData.materialData();
                 SpearData<SpearAttributeData, SpearItemFactory> spearData = registryData.spearData();
                 TabData tabData = registryData.tabData();
 
-                Tier material = materialData.material();
+                Tier material = materialData.material().get();
                 String materialName = materialData.materialName();
                 SpearAttributeData spearAttributeData = spearData.spearAttributeData();
                 SpearItemFactory spearItemFactory = spearData.spearItemFactory() != null ? spearData.spearItemFactory() : SpearItem::new;

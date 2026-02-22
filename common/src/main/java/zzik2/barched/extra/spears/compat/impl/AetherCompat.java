@@ -36,7 +36,7 @@ public class AetherCompat implements ICompatMod {
         return List.of(
                 //1.1x stronger than wood
                 new RegistryData(
-                        new MaterialData<>(AetherItemTiers.SKYROOT, "skyroot"),
+                        new MaterialData<>(() -> AetherItemTiers.SKYROOT, "skyroot"),
                         new SpearData<>(new SpearAttributeData(
                                 0.75F,
                                 0.77F,
@@ -52,7 +52,7 @@ public class AetherCompat implements ICompatMod {
                 ),
                 //1.1x stronger than diamond
                 new RegistryData(
-                        new MaterialData<>(AetherItemTiers.GRAVITITE, "gravitite"),
+                        new MaterialData<>(() -> AetherItemTiers.GRAVITITE, "gravitite"),
                         new SpearData<>(new SpearAttributeData(
                                 0.9545F,
                                 1.1825F,
@@ -68,7 +68,7 @@ public class AetherCompat implements ICompatMod {
                 ),
                 //1.1x stronger than iron
                 new RegistryData(
-                        new MaterialData<>(AetherItemTiers.ZANITE, "zanite"),
+                        new MaterialData<>(() -> AetherItemTiers.ZANITE, "zanite"),
                         new SpearData<>(new SpearAttributeData(
                                 0.8636F,
                                 1.045F,
@@ -84,7 +84,7 @@ public class AetherCompat implements ICompatMod {
                 ),
                 //1.1x stronger than stone
                 new RegistryData(
-                        new MaterialData<>(AetherItemTiers.HOLYSTONE, "holystone"),
+                        new MaterialData<>(() -> AetherItemTiers.HOLYSTONE, "holystone"),
                         new SpearData<>(new SpearAttributeData(
                                 0.6818F,
                                 0.902F,

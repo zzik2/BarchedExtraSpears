@@ -30,7 +30,7 @@ public class ProgressionRebornCompat implements ICompatMod {
         return List.of(
                 //1.2x stronger than iron
                 new RegistryData(
-                        new MaterialData<>(PRTiers.ROSE, "rose"),
+                        new MaterialData<>(() -> PRTiers.ROSE, "rose"),
                         new SpearData<>(new SpearAttributeData(
                                 0.7917F,
                                 1.14F,

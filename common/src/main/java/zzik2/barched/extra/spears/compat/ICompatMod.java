@@ -11,6 +11,7 @@ import zzik2.barched.extra.spears.data.material.MaterialData;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.function.Supplier;
 
 @SuppressWarnings("all")
 public interface ICompatMod {
@@ -30,7 +31,7 @@ public interface ICompatMod {
         List<RegistryData> defaults = getDefaultMaterials();
         List<RegistryData> result = new ArrayList<>();
         for (RegistryData registryData : defaults) {
-            MaterialData<Tier, String> materialData = registryData.materialData();
+            MaterialData<Supplier<Tier>, String> materialData = registryData.materialData();
             SpearData<SpearAttributeData, SpearItemFactory> spearData = registryData.spearData();
             TabData tabData = registryData.tabData();
             SpearAttributeData configuredData = SpearAttributeDataConfigManager.loadOrCreate(getModID(), materialData.materialName(), spearData.spearAttributeData());

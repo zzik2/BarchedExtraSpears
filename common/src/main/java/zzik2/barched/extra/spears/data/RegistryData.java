@@ -8,5 +8,7 @@ import zzik2.barched.extra.spears.data.items.SpearData;
 import zzik2.barched.extra.spears.data.items.SpearItemFactory;
 import zzik2.barched.extra.spears.data.material.MaterialData;
 
-public record RegistryData(MaterialData<Tier, String> materialData, SpearData<SpearAttributeData, SpearItemFactory> spearData, TabData<? extends Item, ? extends Item> tabData) {
+import java.util.function.Supplier;
+
+public record RegistryData(MaterialData<Supplier<Tier>, String> materialData, SpearData<SpearAttributeData, SpearItemFactory> spearData, TabData<? extends Item, ? extends Item> tabData) {
 }

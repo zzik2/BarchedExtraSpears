@@ -42,7 +42,7 @@ public class AdditionalAdditionsCompat implements ICompatMod {
         return List.of(
                 //1.25x stronger than iron
                 new RegistryData(
-                        new MaterialData<>(AAItems.ROSE_GOLD_TOOL_MATERIAL, "rose_gold", uses, damage),
+                        new MaterialData<>(() -> AAItems.ROSE_GOLD_TOOL_MATERIAL, "rose_gold", uses, damage),
                         new SpearData<>(new SpearAttributeData(
                                 0.86F,
                                 1.1875F,

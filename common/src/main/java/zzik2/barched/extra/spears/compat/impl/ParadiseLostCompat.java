@@ -28,9 +28,9 @@ public class ParadiseLostCompat implements ICompatMod {
 
     @Override
     public List<RegistryData> getDefaultMaterials() {
-        Tier OLVITE = ZReflectionTool.getStaticFieldValue(ParadiseLostToolMaterials.class, "OLVITE");
-        Tier SURTRUM = ZReflectionTool.getStaticFieldValue(ParadiseLostToolMaterials.class, "SURTRUM");
-        Tier GLAZED_GOLD = ZReflectionTool.getStaticFieldValue(ParadiseLostToolMaterials.class, "GLAZED_GOLD");
+        Supplier<Tier> OLVITE = () -> ZReflectionTool.getStaticFieldValue(ParadiseLostToolMaterials.class, "OLVITE");
+        Supplier<Tier> SURTRUM = () -> ZReflectionTool.getStaticFieldValue(ParadiseLostToolMaterials.class, "SURTRUM");
+        Supplier<Tier> GLAZED_GOLD = () -> ZReflectionTool.getStaticFieldValue(ParadiseLostToolMaterials.class, "GLAZED_GOLD");
         Supplier<Item> OLVITE_SWORD = () -> ZReflectionTool.getStaticFieldValue(ParadiseLostItems.class, "OLVITE_SWORD");
         Supplier<Item> SURTRUM_SWORD = () -> ZReflectionTool.getStaticFieldValue(ParadiseLostItems.class, "SURTRUM_SWORD");
         Supplier<Item> GLAZED_GOLD_SWORD = () -> ZReflectionTool.getStaticFieldValue(ParadiseLostItems.class, "GLAZED_GOLD_SWORD");
