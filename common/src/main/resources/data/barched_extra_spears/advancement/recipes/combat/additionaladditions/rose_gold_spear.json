@@ -1,0 +1,50 @@
+{
+  "parent": "minecraft:story/iron_tools",
+  "display": {
+    "title": {
+      "translate": "additionaladditions.advancements.obtain_rose_gold"
+    },
+    "description": {
+      "translate": "additionaladditions.advancements.obtain_rose_gold.desc"
+    },
+    "icon": {
+      "id": "additionaladditions:rose_gold_chestplate",
+      "count": 1
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "craft": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "additionaladditions:rose_gold_spear"
+            ]
+          }
+        ]
+      }
+    }
+  },
+  "requirements": [
+    ["craft"]
+  ],
+  "fabric:load_conditions": [
+    {
+      "condition": "fabric:all_mods_loaded",
+      "values": [
+        "additionaladditions"
+      ]
+    }
+  ],
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "additionaladditions"
+    }
+  ]
+}

@@ -9,7 +9,8 @@ public enum CompatMods {
     PARADISE_LOST(new ParadiseLostCompat()),
     PROGRESSION_REBORN(new ProgressionRebornCompat()),
     DRAGONLOOT(new DragonLootCompat()),
-    AETHER(new AetherCompat())
+    AETHER(new AetherCompat()),
+    ADDITIONALADDITIONS(new AdditionalAdditionsCompat()),
     ;
 
     private final ICompatMod compatMod;

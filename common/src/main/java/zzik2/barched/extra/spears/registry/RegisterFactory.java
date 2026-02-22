@@ -78,15 +78,15 @@ public class RegisterFactory {
                 Tiers TIER = ZEnumTool.addConstant(Tiers.class, modID.toUpperCase() + "$" + materialName.toUpperCase(),
                         new Class<?>[]{TagKey.class, int.class, float.class, float.class, int.class, Supplier.class},
                         material.getIncorrectBlocksForDrops(),
-                        material.getUses(),
+                        materialData.uses() != null ? materialData.uses() : material.getUses(),
                         material.getSpeed(),
-                        material.getAttackDamageBonus(),
+                        materialData.attackDamage() != null ? materialData.attackDamage() - 1.0F : material.getAttackDamageBonus(),
                         material.getEnchantmentValue(),
                         (Supplier<Ingredient>) material::getRepairIngredient
                 );
 
                 RegistrySupplier<Item> item = ITEMS.register(materialName + "_spear", () -> spearItemFactory.create(
-                        material,
+                        TIER,
                         ((Item$PropertiesBridge) new Item.Properties()).spear(
                                 TIER,
                                 spearAttributeData.swingSeconds(),
@@ -153,5 +153,20 @@ public class RegisterFactory {
             return ITEM_TO_REGISTRYDATA.get(item).materialData().materialName();
         }
         return null;
+    }
+
+    public static @Nullable RegistrySupplier<Item> getRegisteredSpear(String modID, String materialName) {
+        if (!MODID_TO_SPEARS.containsKey(modID)) return null;
+        List<RegistrySupplier<Item>> spearsSupplier = MODID_TO_SPEARS.get(modID);
+        RegistrySupplier<Item> returnValue = null;
+        for (RegistrySupplier<Item> spearSupplier : spearsSupplier) {
+            if (!ITEM_TO_REGISTRYDATA.containsKey(spearSupplier)) continue;
+            RegistryData registryData = ITEM_TO_REGISTRYDATA.get(spearSupplier);
+            if (registryData.materialData().materialName().equals(materialName)) {
+                returnValue = spearSupplier;
+                break;
+            }
+        }
+        return returnValue;
     }
 }

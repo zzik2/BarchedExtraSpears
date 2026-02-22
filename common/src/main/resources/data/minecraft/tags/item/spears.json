@@ -40,6 +40,10 @@
     {
       "id": "aether:holystone_spear",
       "required": false
+    },
+    {
+      "id": "additionaladditions:rose_gold_spear",
+      "required": false
     }
   ]
 }

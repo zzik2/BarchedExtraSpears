@@ -8,7 +8,12 @@
     "client.ModelBakeryMixin"
   ],
   "mixins": [
-    "VanillaItemTagsProviderMixin"
+    "VanillaItemTagsProviderMixin",
+    "compat.additionaladditions.config.ConfigMixin",
+    "compat.additionaladditions.config.ConfigPropertyInvoker",
+    "compat.additionaladditions.recipe.JEICompatMixin",
+    "compat.additionaladditions.recipe.REICompatMixin",
+    "compat.additionaladditions.recipe.RoseGoldTransmuteRecipeMixin"
   ],
   "injectors": {
     "defaultRequire": 1
