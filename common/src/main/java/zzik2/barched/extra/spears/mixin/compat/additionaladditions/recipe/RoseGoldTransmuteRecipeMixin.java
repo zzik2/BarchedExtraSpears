@@ -91,7 +91,7 @@ public class RoseGoldTransmuteRecipeMixin {
         transmuteMap.put(Items.IRON_LEGGINGS, AAItems.ROSE_GOLD_LEGGINGS.get());
         transmuteMap.put(Items.IRON_BOOTS, AAItems.ROSE_GOLD_BOOTS.get());
         transmuteMap.put(Items.IRON_HORSE_ARMOR, AAItems.ROSE_GOLD_HORSE_ARMOR.get());
-        RegistrySupplier<Item> ROSE_GOLD_SPEAR = RegisterFactory.getRegisteredSpear(CompatMods.ADDITIONALADDITIONS.getCompatMod().getModID(), "rose_gold");
+        RegistrySupplier<Item> ROSE_GOLD_SPEAR = RegisterFactory.getRegisteredSpear(CompatMods.ADDITIONALADDITIONS, "rose_gold");
         if (ROSE_GOLD_SPEAR != null) transmuteMap.put(Barched.Items.IRON_SPEAR, ROSE_GOLD_SPEAR.get());
 
         Item resultItem = transmuteMap.get(itemStack.getItem());

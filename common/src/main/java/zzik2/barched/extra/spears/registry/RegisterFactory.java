@@ -160,6 +160,10 @@ public class RegisterFactory {
         return null;
     }
 
+    public static @Nullable RegistrySupplier<Item> getRegisteredSpear(CompatMods compatMods, String materialName) {
+        return getRegisteredSpear(compatMods.getCompatMod().getModID(), materialName);
+    }
+
     public static @Nullable RegistrySupplier<Item> getRegisteredSpear(String modID, String materialName) {
         if (!MODID_TO_SPEARS.containsKey(modID)) return null;
         List<RegistrySupplier<Item>> spearsSupplier = MODID_TO_SPEARS.get(modID);
