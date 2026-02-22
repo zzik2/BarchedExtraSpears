@@ -162,7 +162,7 @@ You can set the damage and durability in the ``config/additionaladditions/rose_g
 
 ### Deeper and Darker
 
-[Modrinth](https://modrinth.com/mod/deeperdarker) | [CurseForge](https://www.curseforge.com/minecraft/mc-mods/deeper-and-darker)
+[Modrinth](https://modrinth.com/mod/deeperdarker) | [CurseForge](https://www.curseforge.com/minecraft/mc-mods/deeperdarker)
 
 **Deeper and Darker** support is currently in development. Stay tuned!
 
