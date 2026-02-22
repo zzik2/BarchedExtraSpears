@@ -139,13 +139,21 @@ When **Aether** is installed, 4 spears is automatically added!
 </details>
 
 <details>
-<summary>➕ <b>Additional Additions</b> — 🚧 Work in Progress</summary>
+<summary>➕ <b>Additional Additions</b></summary>
 
 ### Additional Additions
 
 [Modrinth](https://modrinth.com/mod/addadd) | [CurseForge](https://www.curseforge.com/minecraft/mc-mods/additional-additions)
 
-**Additional Additions** support is currently in development. Stay tuned!
+When **Additional Additions** is installed, 1 spears is automatically added!
+
+**Added Items:**
+##
+- 🗡️ Rose Gold Spear
+
+<img width="1920" height="1080" alt="rose_gold_spear" src="https://github.com/user-attachments/assets/89096964-790f-449c-a876-ff68746ad598" />
+
+You can set the damage and durability in the ``config/additionaladditions/rose_gold/spear.json5`` file!
 
 </details>
 
