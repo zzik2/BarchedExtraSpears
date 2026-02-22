@@ -60,54 +60,59 @@ public class RegisterFactory {
                 continue;
             }
 
-            BarchedES.LOGGER.info("Mod found. Trying register Spears for: {}", modID);
-            DeferredRegister<Item> ITEMS = DeferredRegister.create(modID, Registries.ITEM);
-            int materialCount = 0;
-
-            for (RegistryData registryData : iCompatMod.getMaterials()) {
-                materialCount++;
-                MaterialData<Supplier<Tier>, String> materialData = registryData.materialData();
-                SpearData<SpearAttributeData, SpearItemFactory> spearData = registryData.spearData();
-                TabData tabData = registryData.tabData();
-
-                Tier material = materialData.material().get();
-                String materialName = materialData.materialName();
-                SpearAttributeData spearAttributeData = spearData.spearAttributeData();
-                SpearItemFactory spearItemFactory = spearData.spearItemFactory() != null ? spearData.spearItemFactory() : SpearItem::new;
-
-                Tiers TIER = ZEnumTool.addConstant(Tiers.class, modID.toUpperCase() + "$" + materialName.toUpperCase(),
-                        new Class<?>[]{TagKey.class, int.class, float.class, float.class, int.class, Supplier.class},
-                        material.getIncorrectBlocksForDrops(),
-                        materialData.uses() != null ? materialData.uses() : material.getUses(),
-                        material.getSpeed(),
-                        materialData.attackDamage() != null ? materialData.attackDamage() - 1.0F : material.getAttackDamageBonus(),
-                        material.getEnchantmentValue(),
-                        (Supplier<Ingredient>) material::getRepairIngredient
-                );
-
-                RegistrySupplier<Item> item = ITEMS.register(materialName + "_spear", () -> spearItemFactory.create(
-                        TIER,
-                        ((Item$PropertiesBridge) new Item.Properties()).spear(
-                                TIER,
-                                spearAttributeData.swingSeconds(),
-                                spearAttributeData.kineticDamageMultiplier(),
-                                spearAttributeData.delaySeconds(),
-                                spearAttributeData.damageCondDurationSeconds(),
-                                spearAttributeData.damageCondMinSpeed(),
-                                spearAttributeData.knockbackCondDurationSeconds(),
-                                spearAttributeData.knockbackCondMinSpeed(),
-                                spearAttributeData.dismountCondDurationSeconds(),
-                                spearAttributeData.dismountCondMinRelativeSpeed()
-                        )
-                ));
-
-                MODID_TO_SPEARS.computeIfAbsent(modID, k -> new ArrayList<>()).add(item);
-                ITEM_TO_REGISTRYDATA.put(item, registryData);
-            }
-
-            ITEMS.register();
-            BarchedES.LOGGER.info("Successfully registered Spears to {}. Found material count: {}", modID, materialCount);
+            init(iCompatMod);
         }
+    }
+
+    public static void init(ICompatMod iCompatMod) {
+        String modID = iCompatMod.getModID();
+        BarchedES.LOGGER.info("Mod found. Trying register Spears for: {}", modID);
+        DeferredRegister<Item> ITEMS = DeferredRegister.create(modID, Registries.ITEM);
+        int materialCount = 0;
+
+        for (RegistryData registryData : iCompatMod.getMaterials()) {
+            materialCount++;
+            MaterialData<Supplier<Tier>, String> materialData = registryData.materialData();
+            SpearData<SpearAttributeData, SpearItemFactory> spearData = registryData.spearData();
+            TabData tabData = registryData.tabData();
+
+            Tier material = materialData.material().get();
+            String materialName = materialData.materialName();
+            SpearAttributeData spearAttributeData = spearData.spearAttributeData();
+            SpearItemFactory spearItemFactory = spearData.spearItemFactory() != null ? spearData.spearItemFactory() : SpearItem::new;
+
+            Tiers TIER = ZEnumTool.addConstant(Tiers.class, modID.toUpperCase() + "$" + materialName.toUpperCase(),
+                    new Class<?>[]{TagKey.class, int.class, float.class, float.class, int.class, Supplier.class},
+                    material.getIncorrectBlocksForDrops(),
+                    materialData.uses() != null ? materialData.uses() : material.getUses(),
+                    material.getSpeed(),
+                    materialData.attackDamage() != null ? materialData.attackDamage() - 1.0F : material.getAttackDamageBonus(),
+                    material.getEnchantmentValue(),
+                    (Supplier<Ingredient>) material::getRepairIngredient
+            );
+
+            RegistrySupplier<Item> item = ITEMS.register(materialName + "_spear", () -> spearItemFactory.create(
+                    TIER,
+                    ((Item$PropertiesBridge) new Item.Properties()).spear(
+                            TIER,
+                            spearAttributeData.swingSeconds(),
+                            spearAttributeData.kineticDamageMultiplier(),
+                            spearAttributeData.delaySeconds(),
+                            spearAttributeData.damageCondDurationSeconds(),
+                            spearAttributeData.damageCondMinSpeed(),
+                            spearAttributeData.knockbackCondDurationSeconds(),
+                            spearAttributeData.knockbackCondMinSpeed(),
+                            spearAttributeData.dismountCondDurationSeconds(),
+                            spearAttributeData.dismountCondMinRelativeSpeed()
+                    )
+            ));
+
+            MODID_TO_SPEARS.computeIfAbsent(modID, k -> new ArrayList<>()).add(item);
+            ITEM_TO_REGISTRYDATA.put(item, registryData);
+        }
+
+        ITEMS.register();
+        BarchedES.LOGGER.info("Successfully registered Spears to {}. Found material count: {}", modID, materialCount);
     }
 
     public static void registerItemsToInvTab(CreativeModeTab creativeModeTab, ICreativeTabOutput output) {
