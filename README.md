@@ -158,26 +158,51 @@ You can set the damage and durability in the ``config/additionaladditions/rose_g
 </details>
 
 <details>
-<summary>🕳️ <b>Deeper and Darker</b> — 🚧 Work in Progress</summary>
+<summary>🕳️ <b>Deeper and Darker</b></summary>
 
 ### Deeper and Darker
 
 [Modrinth](https://modrinth.com/mod/deeperdarker) | [CurseForge](https://www.curseforge.com/minecraft/mc-mods/deeperdarker)
 
-**Deeper and Darker** support is currently in development. Stay tuned!
+When **Deeper and Darker** is installed, 1 spears is automatically added!
+
+**Added Items:**
+##
+- 🗡️ Warden Spear
+
+<img width="1920" height="1080" alt="warden_spear" src="https://github.com/user-attachments/assets/0380f00c-0035-4837-83d8-c89394023636" />
 
 </details>
 
 <details>
-<summary>🟣 <b>Enderite</b> — 🚧 Work in Progress</summary>
+<summary>🟣 <b>Enderite</b></summary>
 
 ### Enderite
 
 [Modrinth](https://modrinth.com/mod/enderite-mod) | [CurseForge](https://www.curseforge.com/minecraft/mc-mods/enderite-mod)
 
-**Enderite** support is currently in development. Stay tuned!
+When **Enderite** is installed, 1 spears is automatically added!
+
+**Added Items:**
+##
+- 🗡️ Enderite Spear
+
+you can set spear damage in ``config/enderitemod.json``
+
+example:
+```json
+{
+  "tools": {
+    "enderiteSpearAD": 7.0
+  }
+}
+```
+
+The Enderite Spear has special abilities! (Check them out in-game!)
 
 </details>
+
+# 
 
 > 💡 **Want to see another mod supported?** Feel free to open an issue! 🙌
 
