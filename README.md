@@ -35,7 +35,8 @@ When **Bronze** is installed, a bronze spear is automatically added!
 ##
 - 🗡️ Bronze Spear
 
-<img width="1920" height="1080" alt="bronze_spear" src="https://github.com/user-attachments/assets/2710402b-c5c7-4b62-acd5-3a7dda1ecc04" />
+<img width="1920" height="1080" alt="bronze_spear" src="https://github.com/user-attachments/assets/773ad5e8-258f-4f72-b354-0265384869a5" />
+
 
 </details>
 
@@ -52,17 +53,17 @@ When **Paradise Lost** is installed, 3 spears is automatically added!
 ##
 - 🗡️ Olvite Spear
 
-<img width="1920" height="1080" alt="olvite_spear" src="https://github.com/user-attachments/assets/ea1f0171-905d-4a8d-a096-734617ccbf37" />
+<img width="1920" height="1080" alt="olvite_spear" src="https://github.com/user-attachments/assets/2ef27b8a-5527-4f49-ab8c-568797e07cf9" />
 
 ##
 - 🗡️ Surtrum Spear
 
-<img width="1920" height="1080" alt="surtrum_spear" src="https://github.com/user-attachments/assets/17b1fa5a-15c9-46ca-a076-f75dd0cfcb8d" />
+<img width="1920" height="1080" alt="surtrum_spear" src="https://github.com/user-attachments/assets/c8d287be-dbae-4b23-a2f6-3609e296388c" />
 
 ##
 - 🗡️ Glazed Gold Spear
 
-<img width="1920" height="1080" alt="glazed_gold_spear" src="https://github.com/user-attachments/assets/18d20eee-e893-4102-9427-d6f1afbec360" />
+<img width="1920" height="1080" alt="glazed_gold_spear" src="https://github.com/user-attachments/assets/1b4eae27-ff44-43c2-adef-09c3ac599228" />
 
 </details>
 
@@ -79,8 +80,7 @@ When **Progression Reborn** is installed, 1 spears is automatically added!
 ##
 - 🗡️ Rose Spear
 
-<img width="1920" height="1080" alt="rose_spear" src="https://github.com/user-attachments/assets/967d2212-db23-4709-961f-cad9bff3ac91" />
-
+<img width="1920" height="1080" alt="rose_spear" src="https://github.com/user-attachments/assets/dff25a4b-392b-4820-9bcf-6b4b7eb0829c" />
 
 </details>
 
@@ -97,8 +97,7 @@ When **Dragon Loot** is installed, 1 spears is automatically added!
 ##
 - 🗡️ Dragon Spear
 
-<img width="1920" height="1080" alt="dragon_spear" src="https://github.com/user-attachments/assets/5cc103ea-d876-4141-bc34-ab536542b91e" />
-
+<img width="1920" height="1080" alt="dragon_spear" src="https://github.com/user-attachments/assets/320cb2ef-a94f-4c74-ad52-368c3353dba0" />
 
 </details>
 
@@ -115,22 +114,22 @@ When **Aether** is installed, 4 spears is automatically added!
 ##
 - 🗡️ Gravitite Spear
 
-<img width="1920" height="1080" alt="gravitite_spear" src="https://github.com/user-attachments/assets/c311e281-572e-4d09-bf56-584cee397b08" />
+<img width="1920" height="1080" alt="gravitite_spear" src="https://github.com/user-attachments/assets/5b41aa24-1b76-4f6e-be40-f679cc77fbcd" />
 
 ##
 - 🗡️ Holystone Spear
 
-<img width="1920" height="1080" alt="holystone_spear" src="https://github.com/user-attachments/assets/e03d5cf5-e81c-4fd0-a0c8-99deae964500" />
+<img width="1920" height="1080" alt="holystone_spear" src="https://github.com/user-attachments/assets/6e9455b3-ac35-4b5c-91d9-f721660c7d59" />
 
 ##
 - 🗡️ Skyroot Spear
 
-<img width="1920" height="1080" alt="skyroot_spear" src="https://github.com/user-attachments/assets/0718add1-4029-449e-855f-7ba4530ff0ef" />
+<img width="1920" height="1080" alt="skyroot_spear" src="https://github.com/user-attachments/assets/6966ecd6-b4b2-41f8-8b73-dd40eb26e1ea" />
 
 ##
 - 🗡️ Zanite Spear
 
-<img width="1920" height="1080" alt="zanite_spear" src="https://github.com/user-attachments/assets/499cee8e-245c-4b20-85af-099089c42bc6" />
+<img width="1920" height="1080" alt="zanite_spear" src="https://github.com/user-attachments/assets/277cc8dc-5dd7-4342-ba30-850642f4631d" />
 
 
 **Gravitite Spear, Holystone Spear, and Zanite Spear have the same abilities as Gravitite Sword, Holystone Sword, and Zanite Sword!**
@@ -151,7 +150,7 @@ When **Additional Additions** is installed, 1 spears is automatically added!
 ##
 - 🗡️ Rose Gold Spear
 
-<img width="1920" height="1080" alt="rose_gold_spear" src="https://github.com/user-attachments/assets/89096964-790f-449c-a876-ff68746ad598" />
+<img width="1920" height="1080" alt="rose_gold_spear" src="https://github.com/user-attachments/assets/957dd968-36e9-45f9-9885-6172421607e8" />
 
 You can set the damage and durability in the ``config/additionaladditions/rose_gold/spear.json5`` file!
 
@@ -170,7 +169,7 @@ When **Deeper and Darker** is installed, 1 spears is automatically added!
 ##
 - 🗡️ Warden Spear
 
-<img width="1920" height="1080" alt="warden_spear" src="https://github.com/user-attachments/assets/0380f00c-0035-4837-83d8-c89394023636" />
+<img width="1920" height="1080" alt="warden_spear" src="https://github.com/user-attachments/assets/39735fe4-4da6-4e6b-b879-79bec25c80c1" />
 
 </details>
 
@@ -186,6 +185,8 @@ When **Enderite** is installed, 1 spears is automatically added!
 **Added Items:**
 ##
 - 🗡️ Enderite Spear
+
+<img width="1920" height="1080" alt="enderite_spear" src="https://github.com/user-attachments/assets/652e9360-f28b-4be4-bcf8-7306d793f61f" />
 
 you can set spear damage in ``config/enderitemod.json``
 
