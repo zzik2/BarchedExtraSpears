@@ -14,6 +14,7 @@ import zzik2.barched.extra.spears.data.items.SpearAttributeData;
 import zzik2.barched.extra.spears.data.items.SpearData;
 import zzik2.barched.extra.spears.data.material.MaterialData;
 
+import java.util.ArrayList;
 import java.util.List;
 import java.util.function.Supplier;
 
@@ -57,5 +58,16 @@ public class AdditionalAdditionsCompat implements ICompatMod {
                         new TabData<>(TAB, null, GOLDEN_SPEAR)
                 )
         );
+    }
+
+    @Override
+    public List<String> getMixins() {
+        List<String> mixins = new ArrayList<>();
+        mixins.add("compat.additionaladditions.config.ConfigMixin");
+        mixins.add("compat.additionaladditions.config.ConfigPropertyInvoker");
+        mixins.add("compat.additionaladditions.recipe.JEICompatMixin");
+        mixins.add("compat.additionaladditions.recipe.REICompatMixin");
+        mixins.add("compat.additionaladditions.recipe.RoseGoldTransmuteRecipeMixin");
+        return mixins;
     }
 }

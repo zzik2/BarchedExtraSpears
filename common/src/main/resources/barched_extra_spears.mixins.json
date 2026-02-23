@@ -1,22 +1,11 @@
 {
   "required": true,
   "package": "zzik2.barched.extra.spears.mixin",
+  "plugin": "zzik2.barched.extra.spears.mixin.BarchesESMixinPlugin",
   "compatibilityLevel": "JAVA_21",
   "minVersion": "0.8",
-  "client": [
-    "client.ItemRendererMixin",
-    "client.ModelBakeryMixin"
-  ],
-  "mixins": [
-    "VanillaItemTagsProviderMixin",
-    "compat.additionaladditions.config.ConfigMixin",
-    "compat.additionaladditions.config.ConfigPropertyInvoker",
-    "compat.additionaladditions.recipe.JEICompatMixin",
-    "compat.additionaladditions.recipe.REICompatMixin",
-    "compat.additionaladditions.recipe.RoseGoldTransmuteRecipeMixin",
-    "compat.enderitemod.Config$ToolsMixin",
-    "compat.enderitemod.SmithingMenuMixin"
-  ],
+  "client": [],
+  "mixins": [],
   "injectors": {
     "defaultRequire": 1
   }

@@ -39,4 +39,8 @@ public interface ICompatMod {
         }
         return result;
     }
+
+    default List<String> getMixins() {
+        return new ArrayList<>();
+    }
 }

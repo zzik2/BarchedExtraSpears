@@ -13,6 +13,7 @@ import zzik2.barched.extra.spears.data.items.SpearAttributeData;
 import zzik2.barched.extra.spears.data.items.SpearData;
 import zzik2.barched.extra.spears.data.material.MaterialData;
 
+import java.util.ArrayList;
 import java.util.List;
 
 public class EnderiteModCompat implements ICompatMod {
@@ -48,5 +49,13 @@ public class EnderiteModCompat implements ICompatMod {
                         new TabData<>(EnderiteMod.ENDERITE_TAB, null, EnderiteTools.ENDERITE_SWORD)
                 )
         );
+    }
+
+    @Override
+    public List<String> getMixins() {
+        List<String> mixins = new ArrayList<>();
+        mixins.add("compat.enderitemod.Config$ToolsMixin");
+        mixins.add("compat.enderitemod.SmithingMenuMixin");
+        return mixins;
     }
 }
