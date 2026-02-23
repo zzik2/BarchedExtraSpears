@@ -6,6 +6,7 @@ import org.objectweb.asm.tree.ClassNode;
 import org.spongepowered.asm.mixin.extensibility.IMixinConfigPlugin;
 import org.spongepowered.asm.mixin.extensibility.IMixinInfo;
 import zzik2.barched.extra.spears.compat.CompatMods;
+import zzik2.barched.extra.spears.util.ModUtil;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -38,7 +39,7 @@ public class BarchesESMixinPlugin implements IMixinConfigPlugin {
             mixins.add("client.ModelBakeryMixin");
         }
         for (CompatMods compatMods : CompatMods.values()) {
-            if (compatMods.isLoaded() && compatMods.isEnabled()) {
+            if (ModUtil.isLoaded(compatMods.getCompatMod().getModID()) && compatMods.isEnabled()) {
                 mixins.addAll(compatMods.getCompatMod().getMixins());
             }
         }
