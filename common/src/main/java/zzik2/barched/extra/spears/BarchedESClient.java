@@ -23,6 +23,7 @@ public class BarchedESClient {
                 Objects.requireNonNull(materialName);
                 SPEAR_MODEL_MAP.put(item.get(), barchedES$spear(nameSpace, materialName));
                 SPEAR_IN_HAND_MODEL_MAP.put(item.get(), barchedES$spear_in_hand(nameSpace, materialName));
+                BarchedES.LOGGER.info("Register Dynamic Spear Models: Mod: {}, Material: {}", nameSpace, materialName);
             }
         }
     }
