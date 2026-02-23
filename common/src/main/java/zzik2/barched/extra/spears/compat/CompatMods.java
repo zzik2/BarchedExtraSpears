@@ -11,7 +11,8 @@ public enum CompatMods {
     DRAGONLOOT(new DragonLootCompat()),
     AETHER(new AetherCompat()),
     ADDITIONALADDITIONS(new AdditionalAdditionsCompat()),
-    DEEPERDARKER(new DeeperDarkerCompat())
+    DEEPERDARKER(new DeeperDarkerCompat()),
+    ENDERITEMOD(new EnderiteModCompat())
     ;
 
     private final ICompatMod compatMod;

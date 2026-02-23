@@ -48,6 +48,10 @@
     {
       "id": "deeperdarker:warden_spear",
       "required": false
+    },
+    {
+      "id": "enderitemod:enderite_spear",
+      "required": false
     }
   ]
 }
