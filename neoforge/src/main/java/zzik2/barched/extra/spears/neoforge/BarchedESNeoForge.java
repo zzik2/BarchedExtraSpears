@@ -18,7 +18,9 @@ public final class BarchedESNeoForge {
 
         if (FMLEnvironment.dist.isClient()) {
             eventBus.addListener(FMLClientSetupEvent.class, event -> {
-                BarchedESClient.init();
+                event.enqueueWork(() -> {
+                    BarchedESClient.init();
+                });
             });
         }
 
