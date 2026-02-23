@@ -38,6 +38,7 @@ public class ItemRendererMixin {
     private BakedModel barchedES$render(BakedModel value) {
         boolean bl2 = barchedES$itemDisplayContext == ItemDisplayContext.GUI || barchedES$itemDisplayContext == ItemDisplayContext.GROUND || barchedES$itemDisplayContext == ItemDisplayContext.FIXED;
         if (bl2) {
+            BarchedESClient.init();
             if (BarchedESClient.SPEAR_MODEL_MAP.containsKey(barchedES$itemStack.getItem())) {
                 ModelResourceLocation model = BarchedESClient.SPEAR_MODEL_MAP.get(barchedES$itemStack.getItem());
                 return this.itemModelShaper.getModelManager().getModel(model);
@@ -48,6 +49,7 @@ public class ItemRendererMixin {
 
     @WrapOperation(method = "getModel", at = @At(value = "INVOKE", target = "Lnet/minecraft/client/renderer/ItemModelShaper;getItemModel(Lnet/minecraft/world/item/ItemStack;)Lnet/minecraft/client/resources/model/BakedModel;"))
     private BakedModel barchedES$getModel(ItemModelShaper instance, ItemStack bakedModel, Operation<BakedModel> original) {
+        BarchedESClient.init();
         if (BarchedESClient.SPEAR_IN_HAND_MODEL_MAP.containsKey(bakedModel.getItem())) {
             ModelResourceLocation model = BarchedESClient.SPEAR_IN_HAND_MODEL_MAP.get(bakedModel.getItem());
             return this.itemModelShaper.getModelManager().getModel(model);

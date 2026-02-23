@@ -12,10 +12,13 @@ import java.util.Objects;
 
 public class BarchedESClient {
 
+    public static boolean INIT = false;
     public static final Map<Item, ModelResourceLocation> SPEAR_MODEL_MAP = new HashMap<>();
     public static final Map<Item, ModelResourceLocation> SPEAR_IN_HAND_MODEL_MAP = new HashMap<>();
 
     public static void init() {
+        if (INIT) return;
+        INIT = true;
         for (String nameSpace : RegisterFactory.MODID_TO_SPEARS.keySet()) {
             for (RegistrySupplier<Item> item : RegisterFactory.MODID_TO_SPEARS.get(nameSpace)) {
                 Objects.requireNonNull(item.get());

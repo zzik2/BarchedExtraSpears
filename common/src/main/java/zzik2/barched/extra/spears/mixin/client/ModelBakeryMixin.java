@@ -21,6 +21,7 @@ public abstract class ModelBakeryMixin {
 
     @Inject(method = "<init>", at = @At(value = "INVOKE", target = "Lnet/minecraft/util/profiling/ProfilerFiller;popPush(Ljava/lang/String;)V", ordinal = 1))
     private void barchedES$init(BlockColors blockColors, ProfilerFiller profilerFiller, Map map, Map map2, CallbackInfo ci) {
+        BarchedESClient.init();
         for (Item item : BarchedESClient.SPEAR_IN_HAND_MODEL_MAP.keySet()) {
             ModelResourceLocation model = BarchedESClient.SPEAR_IN_HAND_MODEL_MAP.get(item);
             this.loadSpecialItemModelAndDependencies(model);
