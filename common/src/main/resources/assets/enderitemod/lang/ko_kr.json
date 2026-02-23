@@ -1,3 +1,7 @@
 {
-  "item.enderitemod.enderite_spear": "엔더라이트 창"
+  "item.enderitemod.enderite_spear": "엔더라이트 창",
+  "item.enderitemod.enderite_spear.tooltip1": "대장장이 작업대에서 엔더 진주를 사용하여",
+  "item.enderitemod.enderite_spear.tooltip2": "순간이동 사용 횟수를 늘리세요.",
+  "item.enderitemod.enderite_spear.tooltip3": "적에게 피해를 입히면 순간이동합니다!",
+  "item.enderitemod.enderite_spear.charge": "충전"
 }

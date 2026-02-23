@@ -1,3 +1,7 @@
 {
-  "item.enderitemod.enderite_spear": "Enderite Spear"
+  "item.enderitemod.enderite_spear": "Enderite Spear",
+  "item.enderitemod.enderite_spear.tooltip1": "Upgrade in smithing table with",
+  "item.enderitemod.enderite_spear.tooltip2": "enderpearls to load teleportation uses.",
+  "item.enderitemod.enderite_spear.tooltip3": "Deal damage to enemies to teleport!",
+  "item.enderitemod.enderite_spear.charge": "Charge"
 }

@@ -137,8 +137,9 @@ public class EnderiteSpear extends SpearItem {
     public void appendHoverText(ItemStack itemStack, TooltipContext tooltipContext, List<Component> list, TooltipFlag tooltipFlag) {
         super.appendHoverText(itemStack, tooltipContext, list, tooltipFlag);
         String charge = itemStack.getOrDefault(EnderiteDataComponents.TELEPORT_CHARGE.get(), 0).toString();
-        list.add(Component.translatable("item.enderitemod.enderite_sword.charge").withStyle(new ChatFormatting[] { ChatFormatting.DARK_AQUA }).append(Component.literal(": " + charge)));
-        list.add(Component.translatable("item.enderitemod.enderite_sword.tooltip1").withStyle(new ChatFormatting[] { ChatFormatting.GRAY, ChatFormatting.ITALIC }));
-        list.add(Component.translatable("item.enderitemod.enderite_sword.tooltip2").withStyle(new ChatFormatting[] { ChatFormatting.GRAY, ChatFormatting.ITALIC }));
+        list.add(Component.translatable("item.enderitemod.enderite_spear.charge").withStyle(new ChatFormatting[] { ChatFormatting.DARK_AQUA }).append(Component.literal(": " + charge)));
+        list.add(Component.translatable("item.enderitemod.enderite_spear.tooltip1").withStyle(new ChatFormatting[] { ChatFormatting.GRAY, ChatFormatting.ITALIC }));
+        list.add(Component.translatable("item.enderitemod.enderite_spear.tooltip2").withStyle(new ChatFormatting[] { ChatFormatting.GRAY, ChatFormatting.ITALIC }));
+        list.add(Component.translatable("item.enderitemod.enderite_spear.tooltip3").withStyle(new ChatFormatting[] { ChatFormatting.GRAY, ChatFormatting.ITALIC }));
     }
 }
