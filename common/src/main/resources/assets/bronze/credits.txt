@@ -1,0 +1,2 @@
+https://github.com/khazoda/bronze/blob/1.21.11/common/src/main/resources/assets/bronze/textures/item/bronze_spear.png
+https://github.com/khazoda/bronze/blob/1.21.11/common/src/main/resources/assets/bronze/textures/item/bronze_spear_in_hand.png

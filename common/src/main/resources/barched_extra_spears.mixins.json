@@ -1,0 +1,12 @@
+{
+  "required": true,
+  "package": "zzik2.barched.extra.spears.mixin",
+  "plugin": "zzik2.barched.extra.spears.mixin.BarchesESMixinPlugin",
+  "compatibilityLevel": "JAVA_21",
+  "minVersion": "0.8",
+  "client": [],
+  "mixins": [],
+  "injectors": {
+    "defaultRequire": 1
+  }
+}

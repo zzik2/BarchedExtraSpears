@@ -1,0 +1,46 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "barched_extra_spears:crafting/aether/zanite_spear"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    },
+    "has_zanite": {
+      "conditions": {
+        "items": [
+          {
+            "items": "#aether:gems/zanite"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe",
+      "has_zanite"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "barched_extra_spears:crafting/aether/zanite_spear"
+    ]
+  },
+  "fabric:load_conditions": [
+    {
+      "condition": "fabric:all_mods_loaded",
+      "values": [
+        "aether"
+      ]
+    }
+  ],
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "aether"
+    }
+  ]
+}

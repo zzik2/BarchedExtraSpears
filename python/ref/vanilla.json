@@ -1,0 +1,79 @@
+{
+  "WOOD": {
+    "swingSeconds": 0.65,
+    "kineticDamageMultiplier": 0.70,
+    "delaySeconds": 0.75,
+    "damageCondDurationSeconds": 5.0,
+    "damageCondMinSpeed": 14.0,
+    "knockbackCondDurationSeconds": 10.0,
+    "knockbackCondMinSpeed": 5.1,
+    "dismountCondDurationSeconds": 15.0,
+    "dismountCondMinRelativeSpeed": 4.6
+  },
+  "STONE": {
+    "swingSeconds": 0.75,
+    "kineticDamageMultiplier": 0.82,
+    "delaySeconds": 0.70,
+    "damageCondDurationSeconds": 4.5,
+    "damageCondMinSpeed": 10.0,
+    "knockbackCondDurationSeconds": 9.0,
+    "knockbackCondMinSpeed": 5.1,
+    "dismountCondDurationSeconds": 13.75,
+    "dismountCondMinRelativeSpeed": 4.6
+  },
+  "COPPER": {
+    "swingSeconds": 0.85,
+    "kineticDamageMultiplier": 0.82,
+    "delaySeconds": 0.65,
+    "damageCondDurationSeconds": 4.0,
+    "damageCondMinSpeed": 9.0,
+    "knockbackCondDurationSeconds": 8.25,
+    "knockbackCondMinSpeed": 5.1,
+    "dismountCondDurationSeconds": 12.5,
+    "dismountCondMinRelativeSpeed": 4.6
+  },
+  "IRON": {
+    "swingSeconds": 0.95,
+    "kineticDamageMultiplier": 0.95,
+    "delaySeconds": 0.60,
+    "damageCondDurationSeconds": 2.5,
+    "damageCondMinSpeed": 8.0,
+    "knockbackCondDurationSeconds": 6.75,
+    "knockbackCondMinSpeed": 5.1,
+    "dismountCondDurationSeconds": 11.25,
+    "dismountCondMinRelativeSpeed": 4.6
+  },
+  "GOLD": {
+    "swingSeconds": 0.95,
+    "kineticDamageMultiplier": 0.70,
+    "delaySeconds": 0.70,
+    "damageCondDurationSeconds": 3.5,
+    "damageCondMinSpeed": 10.0,
+    "knockbackCondDurationSeconds": 8.5,
+    "knockbackCondMinSpeed": 5.1,
+    "dismountCondDurationSeconds": 13.75,
+    "dismountCondMinRelativeSpeed": 4.6
+  },
+  "DIAMOND": {
+    "swingSeconds": 1.05,
+    "kineticDamageMultiplier": 1.075,
+    "delaySeconds": 0.50,
+    "damageCondDurationSeconds": 3.0,
+    "damageCondMinSpeed": 7.5,
+    "knockbackCondDurationSeconds": 6.5,
+    "knockbackCondMinSpeed": 5.1,
+    "dismountCondDurationSeconds": 10.0,
+    "dismountCondMinRelativeSpeed": 4.6
+  },
+  "NETHERITE": {
+    "swingSeconds": 1.15,
+    "kineticDamageMultiplier": 1.20,
+    "delaySeconds": 0.40,
+    "damageCondDurationSeconds": 2.5,
+    "damageCondMinSpeed": 7.0,
+    "knockbackCondDurationSeconds": 5.5,
+    "knockbackCondMinSpeed": 5.1,
+    "dismountCondDurationSeconds": 8.75,
+    "dismountCondMinRelativeSpeed": 4.6
+  }
+}
